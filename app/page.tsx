@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
-import CountdownTimer from "@/components/ui/countdown-timer";
-import RegistrationChart from "@/components/ui/registration-chart";
-import EventsSection from "@/components/ui/event-session";
+import EventsSection from "../components/ui/event-session";
+import RegistrationChart from "../components/ui/registration-chart";
+import CountdownTimer from "../components/ui/countdown-timer";
 
 export default function Home() {
   return (
