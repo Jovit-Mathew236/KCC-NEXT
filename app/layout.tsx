@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={`bg-gray-900 text-white bg-cover ${inter.className}`}
-        style={{ backgroundImage: "url('/assets/bg.webp')" }}
+        style={{ backgroundImage: "url('./assets/bg.webp')" }}
       >
         {children}
       </body>
