@@ -45,11 +45,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/assets/kcclogo16.png", sizes: "16x16", type: "image/png" },
-      { url: "/assets/kcclogo32.png", sizes: "32x32", type: "image/png" },
-      { url: "/assets/kcclogo48.png", sizes: "48x48", type: "image/png" },
+      { url: "./assets/kcclogo16.png", sizes: "16x16", type: "image/png" },
+      { url: "./assets/kcclogo32.png", sizes: "32x32", type: "image/png" },
+      { url: "./assets/kcclogo48.png", sizes: "48x48", type: "image/png" },
     ],
-    apple: "/assets/kcclogo.png",
+    apple: "./assets/kcclogo.png",
   },
 };
 
@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={`bg-gray-900 text-white bg-cover ${inter.className}`}
-        style={{ backgroundImage: "url('/assets/bg.webp')" }}
+        style={{ backgroundImage: "url('./assets/bg.webp')" }}
       >
         {children}
       </body>

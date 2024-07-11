@@ -89,7 +89,7 @@ const EventsSection = () => {
         <Image
           width={500}
           height={500}
-          src="/assets/kcclogowhite.webp"
+          src="./assets/kcclogowhite.webp"
           alt=""
           className="w-6 h-6 md:w-10 md:h-10 p-2 md:p-2 m-auto"
         />
