@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import ApexCharts from "react-apexcharts";
+
+const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const fetchDistrictData = async () => {
   try {
@@ -37,7 +38,11 @@ const RegistrationChart = () => {
   const [districtData, setDistrictData] = useState<any>({});
   const [chartData, setChartData] = useState<any[]>([]);
   const [totalRegistration, setTotalRegistration] = useState<number>(0);
+  const [isMounted, setIsMounted] = useState(false);
 
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   useEffect(() => {
     const loadDistrictData = async () => {
       const data: { data: any } = await fetchDistrictData();
@@ -197,14 +202,16 @@ const RegistrationChart = () => {
             </div>
           </div>
         </div>
-        <div id="column-chart">
-          <ApexCharts
-            options={chartOptions}
-            series={chartOptions.series}
-            type="bar"
-            height="320px"
-          />
-        </div>
+        {isMounted && (
+          <div id="column-chart">
+            <ApexCharts
+              options={chartOptions}
+              series={chartOptions.series}
+              type="bar"
+              height="320px"
+            />
+          </div>
+        )}
       </div>
     </section>
   );
