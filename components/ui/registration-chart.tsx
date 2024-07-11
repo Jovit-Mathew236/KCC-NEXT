@@ -1,5 +1,4 @@
-// components/RegistrationChart.tsx
-
+"use client";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import ApexCharts from "react-apexcharts";

@@ -1,9 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import Head from "next/head";
-import Script from "next/script";
-import Link from "next/link";
+import React from "react";
 import EventsSection from "../components/ui/event-session";
 import RegistrationChart from "../components/ui/registration-chart";
 import CountdownTimer from "../components/ui/countdown-timer";
@@ -11,27 +8,6 @@ import CountdownTimer from "../components/ui/countdown-timer";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Kerala Campus Conference 2024</title>
-        <meta
-          name="description"
-          content="Join us for the Kerala Campus Conference 2024. Proclaim from the rooftops!"
-        />
-        {/* Add other meta tags, link tags, etc. */}
-      </Head>
-
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-070KWDF5CS');
-        `}
-      </Script>
       <header
         className="bg-cover bg-center h-screen bg-fixed"
         style={{ backgroundImage: "url('/assets/hero1.webp')" }}
