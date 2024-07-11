@@ -14,7 +14,7 @@ export default function Home() {
         <div className="bg-black bg-opacity-50 h-full flex justify-center">
           <div className="absolute bottom-10 flex flex-col justify-end items-center md:static md:justify-center overflow-hidden">
             <Image
-              src="./assets/kcclogo.webp"
+              src="/assets/kcclogo.webp"
               width={500}
               height={500}
               className="object-cover mb-4 w-56 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
 
             <Image
-              src="./assets/PFTR.png"
+              src="/assets/PFTR.png"
               width={500}
               height={500}
               className="object-cover mb-4 w-56 "
@@ -43,7 +43,7 @@ export default function Home() {
                 View Detail
               </a>
               <a
-                href="./assets/docs/KCC THEME DOC.pdf"
+                href="/assets/docs/KCC THEME DOC.pdf"
                 download="KCC THEME DOC.pdf"
                 className="bg-yellow-500 text-black font-bold px-4 py-2 rounded-full ml-4"
               >
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="relative bg-blue-500 p-6 rounded-[20px] tiltedr text-center">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Image
-                src="./assets/aboutarrow.webp"
+                src="/assets/aboutarrow.webp"
                 width={500}
                 height={500}
                 alt="Icon"
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="relative bg-green-500 p-6 rounded-[20px] tiltedl text-center">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Image
-                src="./assets/aboutdp.webp"
+                src="/assets/aboutdp.webp"
                 width={500}
                 height={500}
                 alt="Icon"
@@ -100,7 +100,7 @@ export default function Home() {
           <div className="relative bg-yellow-500 p-6 rounded-[20px] text-center">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Image
-                src="./assets/aboutstar.webp"
+                src="/assets/aboutstar.webp"
                 width={500}
                 height={500}
                 alt="Icon"
@@ -136,7 +136,7 @@ export default function Home() {
               </p>
             </div>
             <Image
-              src="./assets/themeprofess.webp"
+              src="/assets/themeprofess.webp"
               width={500}
               height={500}
               className="h-48 w-auto"
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
           <div className="theme-block flex items-center md:w-[640px] md:justify-between gap-6">
             <Image
-              src="./assets/themewitness.webp"
+              src="/assets/themewitness.webp"
               width={500}
               height={500}
               className="h-44 w-auto"
@@ -169,7 +169,7 @@ export default function Home() {
               </p>
             </div>
             <Image
-              src="./assets/themecelibrates.webp"
+              src="/assets/themecelibrates.webp"
               width={500}
               height={500}
               className="h-48 w-auto"
@@ -247,7 +247,7 @@ export default function Home() {
       {/* <!-- About the App Section --> */}
       <section className="py-12 px-6 md:w-[600px] m-auto">
         <Image
-          src="./assets/kcclogo.webp"
+          src="/assets/kcclogo.webp"
           alt="KCC Logo"
           width={500}
           height={500}
@@ -264,13 +264,13 @@ export default function Home() {
           <div className="flex flex-col gap-2 w-full text-center md:w-fit md:m-auto">
             <a
               href="https://drive.google.com/drive/folders/1rWgeReEVlQnD53q9NQXGb34Wzk2Zly2S?usp=sharing"
-              className="bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer  justify-center after:ml-4 after:content-[url('./assets/android.webp')]"
+              className="bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer  justify-center after:ml-4 after:content-[url('/assets/android.webp')]"
             >
               Download for Android
             </a>
             <a
               href="https://testflight.apple.com/join/b8eIbxEV"
-              className="bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer justify-center after:ml-4 after:content-[url('./assets/apple.webp')]"
+              className="bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer justify-center after:ml-4 after:content-[url('/assets/apple.webp')]"
             >
               Download for iOS
             </a>
@@ -293,42 +293,42 @@ export default function Home() {
         </p>
         <div className="w-[110vw] -ml-10 grid grid-cols-3 gap-4 tiltedl-xl ">
           <Image
-            src="./assets/kcc1.webp"
+            src="/assets/kcc1.webp"
             width={500}
             height={500}
             alt="gallery-image"
             className="rounded object-cover w-auto h-auto"
           ></Image>
           <Image
-            src="./assets/kcc2.webp"
+            src="/assets/kcc2.webp"
             width={500}
             height={500}
             alt="gallery-image"
             className="rounded object-cover w-auto h-auto"
           ></Image>
           <Image
-            src="./assets/kcc3.webp"
+            src="/assets/kcc3.webp"
             width={500}
             height={500}
             alt="gallery-image"
             className="rounded object-cover w-auto h-auto"
           ></Image>
           <Image
-            src="./assets/kcc4.webp"
+            src="/assets/kcc4.webp"
             width={500}
             height={500}
             alt="gallery-image"
             className="rounded object-cover w-auto h-auto"
           ></Image>
           <Image
-            src="./assets/kcc5.webp"
+            src="/assets/kcc5.webp"
             width={500}
             height={500}
             alt="gallery-image"
             className="rounded object-cover w-auto h-auto"
           ></Image>
           <Image
-            src="./assets/kcc6.webp"
+            src="/assets/kcc6.webp"
             width={500}
             height={500}
             alt="gallery-image"
@@ -344,7 +344,7 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
           <div className="flex flex-col items-center mb-8">
             <Image
-              src="./assets/kcclogo.webp"
+              src="/assets/kcclogo.webp"
               width={500}
               height={500}
               alt="KCC Logo"
@@ -418,7 +418,7 @@ export default function Home() {
                 className="flex items-center justify-center md:justify-start mb-2 w-fit"
               >
                 <Image
-                  src="./assets/apple.webp"
+                  src="/assets/apple.webp"
                   width={500}
                   height={500}
                   alt="iOS"
@@ -431,7 +431,7 @@ export default function Home() {
                 className="flex items-center justify-center md:justify-start mb-2 w-fit"
               >
                 <Image
-                  src="./assets/android.webp"
+                  src="/assets/android.webp"
                   width={500}
                   height={500}
                   alt="Android"
@@ -443,7 +443,7 @@ export default function Home() {
           </div>
           <div className="mt-8 text-center">
             <Image
-              src="./assets/logo.webp"
+              src="/assets/logo.webp"
               width={500}
               height={500}
               alt="KCC Logo"
