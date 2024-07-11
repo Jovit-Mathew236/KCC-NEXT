@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
-  basePath: "/KCC-NEXT",
-  output: "export", // <=== enables static exports
+  basePath: isProd ? "/KCC-NEXT" : "",
+  assetPrefix: isProd ? "/KCC-NEXT/" : "",
+  output: isProd ? "export" : "", // <=== enables static exports
   images: {
     remotePatterns: [
       {

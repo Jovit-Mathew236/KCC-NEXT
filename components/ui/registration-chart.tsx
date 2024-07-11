@@ -1,6 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "./select";
 
 const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false });
 
@@ -60,10 +69,7 @@ const RegistrationChart = () => {
     loadDistrictData();
   }, []);
 
-  const handleDistrictChange = async (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    const district = event.target.value;
+  const handleDistrictChange = async (district: string) => {
     const collegeData: { data: any } = await fetchCollegeData(district);
     const newChartData = Object.entries(collegeData).map(([key, value]) => ({
       x: key,
@@ -161,18 +167,25 @@ const RegistrationChart = () => {
       </div>
       <p className="font-thin text-center mb-6">Counting</p>
       <div className="flex gap-3 w-fit my-2 mx-auto">
-        <select
-          id="district-select"
-          className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 bg-opacity- backdrop-blur-md border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
-          onChange={handleDistrictChange}
+        <Select
+          onValueChange={(value: string) => {
+            handleDistrictChange(value);
+          }}
         >
-          <option selected>Choose a Zone</option>
-          {Object.keys(districtData).map((district) => (
-            <option key={district} value={district}>
-              {district}
-            </option>
-          ))}
-        </select>
+          <SelectTrigger className="w-full border text-sm rounded-lg p-2.5 bg-gray-700 bg-opacity-70 backdrop-blur-md border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
+            <SelectValue placeholder="Choose a Zone" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectLabel>Zones</SelectLabel>
+              {Object.keys(districtData).map((district) => (
+                <SelectItem key={district} value={district}>
+                  {district}
+                </SelectItem>
+              ))}
+            </SelectGroup>
+          </SelectContent>
+        </Select>
       </div>
       <div className="m-auto max-w-sm md:max-w-lg w-full rounded-lg shadow bg-opacity-30 backdrop-blur-md bg-gray-800 p-4 md:p-6">
         <div className="flex justify-between pb-4 mb-4 border-b border-gray-700">

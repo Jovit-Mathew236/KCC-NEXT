@@ -2,16 +2,15 @@
   "name": "kccv4",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kcc24.live",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d build"
+    "deploy": "cross-env NODE_ENV=production npm run build && touch out/.nojekyll"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "apexcharts": "^3.50.0",
     "class-variance-authority": "^0.7.0",
