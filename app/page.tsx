@@ -225,7 +225,7 @@ export default function Home() {
               Contact your college coordinator to get your invitation.
             </p>
           </li>
-          <li className="mb-10 ml-6 delay-[300ms] duration-[600ms]">
+          <li className="mb-10 ml-6">
             <div className="absolute w-3 h-3 bg-fuchsia-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <h3 className="text-lg font-semibold text-white">
               Download the KCC App
@@ -236,7 +236,7 @@ export default function Home() {
               registration.
             </p>
           </li>
-          <li className="mb-10 ml-6 delay-[300ms] duration-[600ms]">
+          <li className="mb-10 ml-6">
             <div className="absolute w-3 h-3 bg-fuchsia-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <h3 className="text-lg font-semibold text-white">
               Join the KCC Community
@@ -246,7 +246,7 @@ export default function Home() {
               and stay updated.
             </p>
           </li>
-          <li className="mb-10 ml-6 delay-[300ms] duration-[600ms]">
+          <li className="mb-10 ml-6">
             <div className="absolute w-3 h-3 bg-fuchsia-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <h3 className="text-lg font-semibold text-white">
               Pay the Registration Fee
@@ -256,7 +256,7 @@ export default function Home() {
               secure your spot.
             </p>
           </li>
-          <li className="ml-6 delay-[300ms] duration-[600ms]">
+          <li className="ml-6">
             <div className="absolute w-3 h-3 bg-fuchsia-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <h3 className="text-lg font-semibold text-white">
               Prepare for KCC24

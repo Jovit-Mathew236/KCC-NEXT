@@ -70,17 +70,16 @@ const RegistrationChart = () => {
       newChartData.reduce((total, data) => total + data.y, 0)
     );
   };
-  const chartOptions = {
+  const chartOptions: ApexCharts.ApexOptions = {
     colors: ["#1A56DB", "#FDBA8C"],
     series: [
       {
         name: "Participants",
-        color: "#0ea5e9",
         data: chartData,
       },
     ],
     chart: {
-      type: "bar",
+      type: "bar", // Ensure this matches one of the recognized chart types
       height: "320px",
       fontFamily: "Inter, sans-serif",
       toolbar: {
@@ -91,8 +90,8 @@ const RegistrationChart = () => {
       bar: {
         horizontal: false,
         columnWidth: "70%",
-        borderRadiusApplication: "end",
         borderRadius: 8,
+        borderRadiusApplication: "end",
       },
     },
     tooltip: {
@@ -103,7 +102,6 @@ const RegistrationChart = () => {
         fontFamily: "Inter, sans-serif",
       },
     },
-
     stroke: {
       show: true,
       width: 0,
@@ -125,7 +123,6 @@ const RegistrationChart = () => {
       show: false,
     },
     xaxis: {
-      floating: false,
       labels: {
         show: true,
         style: {
@@ -150,10 +147,7 @@ const RegistrationChart = () => {
 
   return (
     <section className="py-12 px-6 overflow-x-hidden">
-      <div
-        className="relative flex justify-center delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-        data-taos-offset="100"
-      >
+      <div className="relative flex justify-center">
         <h2 className="mb-8 text-center leading-10 z-1 fontNovitha">
           Registration
         </h2>
@@ -161,12 +155,7 @@ const RegistrationChart = () => {
           REGISTRATION
         </h1>
       </div>
-      <p
-        className="font-thin text-center mb-6 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-        data-taos-offset="100"
-      >
-        Counting
-      </p>
+      <p className="font-thin text-center mb-6">Counting</p>
       <div className="flex gap-3 w-fit my-2 mx-auto">
         <select
           id="district-select"

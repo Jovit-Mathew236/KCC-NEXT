@@ -41,30 +41,19 @@ const EventsSection = () => {
 
   return (
     <section className="py-12 px-6 overflow-x-hidden">
-      <div
-        className="relative flex justify-center delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-        data-taos-offset="100"
-      >
+      <div className="relative flex justify-center">
         <h2 className="mb-8 text-center leading-10 z-1 fontNovitha">Events</h2>
         <h1 className="m-auto text-[80px] -top-5 font-black z-0 opacity-10 absolute leading-10">
           EVENTS
         </h1>
       </div>
-      <p
-        className="font-thin text-center mb-6 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-        data-taos-offset="100"
-      >
-        Ongoing events
-      </p>
+      <p className="font-thin text-center mb-6 ">Ongoing events</p>
 
       <div className="relative mx-auto border-gray-800 bg-gray-800 border-[16px] rounded-t-xl h-[272px] max-w-[401px] md:h-[394px] md:max-w-[612px]">
         <div className="relative flex justify-center items-center">
           <span className="animate-ping absolute inline-flex h-[140px] w-[180px] mt-60 rounded-md bg-yellow-500 opacity-35 z-0"></span>
         </div>
-        <div
-          className="rounded-xl overflow-hidden h-[240px] md:h-[362px] delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-          data-taos-offset="100"
-        >
+        <div className="rounded-xl overflow-hidden h-[240px] md:h-[362px] ">
           <div
             id="gallery"
             className="relative w-full h-[240px] md:h-[362px] rounded-xl"
