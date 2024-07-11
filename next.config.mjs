@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/KCC-NEXT",
+  output: "export", // <=== enables static exports
   images: {
     remotePatterns: [
       {
