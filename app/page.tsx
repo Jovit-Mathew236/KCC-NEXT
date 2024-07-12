@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
 
             <Image
-              src="/assets/PFTR.png"
+              src="assets/PFTR.png"
               width={500}
               height={500}
               className="object-cover mb-4 w-56 "
