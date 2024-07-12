@@ -264,13 +264,13 @@ export default function Home() {
           <div className="flex flex-col gap-2 w-full text-center md:w-fit md:m-auto">
             <a
               href="https://drive.google.com/drive/folders/1rWgeReEVlQnD53q9NQXGb34Wzk2Zly2S?usp=sharing"
-              className="bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer  justify-center after:ml-4 after:content-[url('/assets/android.webp')]"
+              className='bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer  justify-center after:ml-4 after:content-[url("/assets/android.webp")]'
             >
               Download for Android
             </a>
             <a
               href="https://testflight.apple.com/join/b8eIbxEV"
-              className="bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer justify-center after:ml-4 after:content-[url('/assets/apple.webp')]"
+              className='bg-gray-900 px-4 py-2 rounded flex items-center cursor-pointer justify-center after:ml-4 after:content-[url("/assets/apple.webp")]'
             >
               Download for iOS
             </a>
