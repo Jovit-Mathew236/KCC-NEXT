@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <header
         className="bg-cover bg-center h-screen bg-fixed"
-        style={{ backgroundImage: "url('/assets/hero1.webp')" }}
+        style={{ backgroundImage: "url('./assets/hero1.webp')" }}
       >
         <div className="bg-black bg-opacity-50 h-full flex justify-center">
           <div className="absolute bottom-10 flex flex-col justify-end items-center md:static md:justify-center overflow-hidden">
