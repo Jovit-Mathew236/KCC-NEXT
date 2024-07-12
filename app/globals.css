@@ -70,12 +70,12 @@
 
   @font-face {
     font-family: 'NovithaScriptDemo';
-    src: url('./fonts/novitha_script/NovithaScriptDemo2.woff2') format('woff2');
+    src: url('/fonts/novitha_script/NovithaScriptDemo2.woff2') format('woff2');
   }
 
   @font-face {
     font-family: 'DegularVariable';
-    src: url('./fonts/Degular_font/DegularVariable.woff2') format('woff2');
+    src: url('/fonts/Degular_font/DegularVariable.woff2') format('woff2');
   }
 }
 
